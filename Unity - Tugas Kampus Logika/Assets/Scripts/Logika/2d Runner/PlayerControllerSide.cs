@@ -42,7 +42,8 @@ public class PlayerControllerSide : MonoBehaviour
         //Debug.Log(other.name);
         if(other.gameObject.tag == "Obstacle")
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

@@ -6,10 +6,14 @@ public class PlayerControllerSide : MonoBehaviour
 {
     public float jumpSpeed;
     public float moveSpeed;
+
+    public bool isGravityMode;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Physics.gravity.y > 0)
+            Physics.gravity *= -1;
     }
 
     void FixedUpdate()
@@ -25,7 +29,15 @@ public class PlayerControllerSide : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.GetComponent<Rigidbody>().velocity = new Vector3(0, 1* jumpSpeed, 0);
+            if (isGravityMode)
+            {
+                Physics.gravity *= -1;
+            }
+            else
+            {
+                this.GetComponent<Rigidbody>().velocity = new Vector3(0, 1 * jumpSpeed, 0);
+            }
+            
             print("Jump");
         }
 

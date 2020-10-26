@@ -45,6 +45,10 @@ public class GameSceneControllerSide : MonoBehaviour
             gameCamera.transform.position = new Vector3(player.transform.position.x, gameCamera.transform.position.y, gameCamera.transform.position.z);
             gameText.text = "Score: " + Mathf.Floor(player.transform.position.x);
         }
+        else
+        {
+            gameText.text = "Press R to Restart";
+        }
 
         
 
@@ -59,11 +63,6 @@ public class GameSceneControllerSide : MonoBehaviour
             blockObj.transform.position = new Vector3(blockPointer + block.sizeX / 2, 0, 0);
             blockPointer += block.sizeX;
             
-        }
-
-        if(player == null)
-        {
-            gameText.text += "\nPress R to Restart";
         }
 
         if(Input.GetKeyDown(KeyCode.R))

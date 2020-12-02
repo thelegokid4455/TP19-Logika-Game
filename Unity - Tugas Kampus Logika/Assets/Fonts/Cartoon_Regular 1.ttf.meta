@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 20cb6ab3e9e83084a9d77cc700525c6b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cartoon
+  fontNames:
+  - Cartoon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 601ed07b1ed8cee48b18ee4718153958, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
